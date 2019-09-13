@@ -42,7 +42,7 @@ get_header();
         <?php endwhile; ?> 
         <?php wp_reset_postdata(); ?>
 		
-		<div class="container">
+		<div class="container services-back-link">
 			<div class="row">
 				<div class="col-md-4 col-md-offset-1 col-sm-5 col-xs-12">
 				<a href="<?php echo home_url(); ?>" class="back">< <?php pll_e('Назад'); ?></a>

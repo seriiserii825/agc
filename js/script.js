@@ -20,4 +20,15 @@ $(document).ready(function(){
       }, 1000);
       e.preventDefault();
    });
+
+
+    let sandwitch = function () {
+        $('.sandwitch-wrap').on('click', function () {
+            $('#bs-example-navbar-collapse-1').toggleClass('active');
+
+            $(this).toggleClass('sandwitch--active');
+            $(this).find('.sandwitch').toggleClass('sandwitch--active');
+        });
+    };
+    sandwitch();
 });

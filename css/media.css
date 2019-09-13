@@ -216,3 +216,251 @@ p.mail:after{
     margin-left: 0;
   }
 }
+.navbar-default {
+  position: relative;
+}
+
+.nav.navbar-nav.navbar-right {
+  position: absolute;
+  top: 0;
+  right: 290px;
+  transform: translateX(-50%);
+	float: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    background: #fff;
+  }
+  .navbar-header {
+    padding-top: 10px;
+  }
+  .navbar-default {
+    padding-bottom: 5px;
+  }
+  .navbar-brand {
+    display: table;
+    margin: 0 auto;
+    padding: 0;
+    float: none;
+    width: 120px;
+  }
+
+  .navbar-brand img.logo {
+    margin: 0;
+    padding: 0;
+		max-width: 100%;
+    height: auto;
+	}
+  .navbar-default {
+    position: relative;
+  }
+  .navbar-default .navbar-toggle {
+    width: 40px;
+    border: 2px solid #C6C6C6;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background: #C6C6C6;
+  }
+  .sandwitch-wrap {
+    display: block;
+  }
+
+  .header-bottom {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100%;
+    display: block;
+    background: #1d3954;
+    transform: translateX(400px);
+		transition: all .4s ease;
+    opacity: 0;
+		z-index: 1000;
+  }
+  .header-bottom.active {
+    transform: translateX(0);
+    opacity: 1;
+	}
+
+  .nav.navbar-nav.navus {
+    position: relative;
+    top: 60px;
+    text-align: right;
+	}
+
+  .nav.navbar-nav.navus li a {
+    font-size: 16px;
+	}
+
+  .nav.navbar-nav.navbar-right {
+    margin: 0;
+    top: 44px;
+    right: auto;
+		left: 46%;
+    transform: translateX(-50%);
+    z-index: 1000;
+  }
+  .bottom-info {
+    display: none;
+  }
+  .video-bg {
+    height: 230px;
+  }
+  #uslugi h1 {
+    font-size: 32px;
+  }
+  #uslugi {
+    margin-top: 26px;
+  }
+  #about .left {
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100%;
+    width: 100%;
+  }
+  #about .left .content h2 {
+    font-size: 30px;
+  }
+  #filial .item {
+    padding-left: 0;
+  }
+  #filial .item h1 {
+    font-size: 28px;
+  }
+  #filial .item p {
+    font-size: 19px;
+  }
+  .carta {
+    width: 280px;
+    height: 300px;
+  }
+  .balti {
+    top: 60px;
+    left: 52px;
+  }
+  .ungeni {
+    top: 118px;
+    left: 46px;
+  }
+  .carta p {
+    font-size: 16px;
+  }
+  .carta .phone-number {
+    display: none;
+  }
+  .carta .fas {
+    position: absolute;
+    top: 6px;
+    left: -26px;
+    font-size: 20px;
+  }
+  .chisinau {
+    top: 158px;
+    left: 78px;
+  }
+	.cahul {
+    top: 262px;
+    left: 104px;
+  }
+  #filial .map-with-line {
+    display: none;
+  }
+  #filial .map-clear {
+    position: relative;
+    right: 376px;
+    display: block;
+		max-width: none;
+    height: 343px;
+  }
+  #filial .item:after {
+    display: none;
+  }
+  #filial .item h1 {
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+	}
+
+
+  #filial .item h1::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 5px;
+    background: #7DBE87;
+	}
+  #filial .item p {
+    margin-top: 10px;
+  }
+
+  #filial .item h1 br {
+    display: none;
+  }
+  #partners {
+    display: none;
+  }
+  #contacts {
+    padding-top: 40px;
+  }
+  #contacts h1 {
+
+    font-size: 28px;
+  }
+  #contacts h1:before {
+    width: 70px;
+    margin-left: -33px;
+  }
+  #contacts .phone_head:before {
+    display: none;
+  }
+  #contacts h3 {
+    text-align: center;
+  }
+  #contacts p {
+    text-align: center;
+  }
+  .footer-form-contacts {
+    display: none;
+  }
+  .stat_bg {
+    height: 148px;
+	}
+  .stat_bg h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .stat_bg h1:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .item-loop {
+    padding-top: 20px;
+    padding-bottom: 20px;
+	}
+  .item-loop h3 {
+    font-size: 16px;
+  }
+
+  .item-loop p,
+  .item-loop li {
+    font-size: 14px;
+  }
+  .services-back-link {
+    display: none;
+  }
+  #contacts .phone_head {
+    text-align: center;
+  }
+}
+
+
+
