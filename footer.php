@@ -7,7 +7,7 @@
             <div class="col-md-5 col-md-offset-1 col-xs-12">
                 <div class="item first">
                     <h2 class="phone_head"><?php pll_e( 'Позвоните' ); ?>:
-                        <a href="tel:<?php the_field( 'phone', 'options' ); ?>"><?php the_field( 'phone', 'options' ); ?></a>
+                        <a href="tel:<?php the_field( 'phone_2', 'options' ); ?>"><?php the_field( 'phone_2', 'options' ); ?></a>
                     </h2>
                     <h3><?php pll_e( 'Наш адрес' ); ?>:</h3>
                     <p>

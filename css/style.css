@@ -1349,6 +1349,13 @@ Imaging with any questions regarding Web fonts:  http://webfonts.fonts.com
 /* Raleway-SemiBold */
 
 @font-face {
+	font-family: 'Raleway';
+	src: url("../fonts/Raleway-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
 	font-family: "Raleway-SemiBold";
 	src: url("//fonts.gstatic.com/s/raleway/v12/STBOO2waD2LpX45SXYjQBVQlYEbsez9cZjKsNMjLOwM.eot?#iefix");
 	src: url("//fonts.gstatic.com/s/raleway/v12/STBOO2waD2LpX45SXYjQBVQlYEbsez9cZjKsNMjLOwM.eot?#iefix") format("eot"),
@@ -1655,8 +1662,9 @@ body {
 }
 
 .navbar-default .navbar-nav.nav > li > a {
-	margin: 32px 75px 0 0;
+	margin: 32px 86px 0 0;
 	padding: 0;
+	font-family: 'Raleway', sans-serif;
 	font-size: 15px;
 }
 
@@ -1674,7 +1682,7 @@ body {
 }
 
 .nav.navbar-nav {
-	margin-left: 145px;
+	margin-left: 184px;
 }
 
 .drop-menu {
@@ -1756,9 +1764,12 @@ body {
 }
 
 .video-bg .info h1 {
-	letter-spacing: 0.05em;
+	position: relative;
+	top: 2px;
+	letter-spacing: 1.55px;
 	font-weight: 700;
 	font-size: 41px;
+	line-height: 48px;
 }
 
 .video-bg .info h1 span {
@@ -1766,9 +1777,16 @@ body {
 }
 
 .video-bg .info p {
+	position: relative;
+	top: -6px;
+	left: -12px;
 	font-size: 25px;
 	line-height: 120px;
 	font-family: raleway, sans-serif;
+}
+.info .go-to-services {
+	position: relative;
+	top: 16px;
 }
 
 .video-bg .bottom-info {
@@ -1786,8 +1804,9 @@ body {
 	color: #fff;
 	font-size: 17px;
 	display: inline-block;
-	margin: 19px 20px;
+	margin: 19px 0;
 	padding-left: 26px;
+	padding-right: 26px;
 	position: relative;
 	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
 }
@@ -1795,10 +1814,6 @@ body {
 .video-bg .bottom-info p i {
 	position: absolute;
 	left: 0;
-}
-
-.video-bg .bottom-info p:first-child {
-	margin-left: 0;
 }
 
 .video-bg .bottom-info p a {
@@ -1835,17 +1850,18 @@ body {
 }
 
 #uslugi {
-	margin-top: 70px;
-	margin-bottom: 70px;
+	margin-top: 53px;
+	margin-bottom: 44px;
 	text-align: center;
 }
 
 #uslugi h1 {
+	margin-bottom: 32px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #C6C6C6;
 	position: relative;
-	padding-bottom: 17px;
+	padding-bottom: 8px;
 	font-weight: 400;
 	font-size: 55px;
 	font: normal normal normal 55px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
@@ -1855,9 +1871,9 @@ body {
 	content: '';
 	position: absolute;
 	left: 50%;
-	margin-left: -70px;
+	margin-left: -62px;
 	bottom: -10px;
-	width: 140px;
+	width: 120px;
 	background: #7dbe87;
 	height: 10px;
 }
@@ -1891,14 +1907,17 @@ body {
 
 #uslugi .item .content {
 	padding: 22px;
+	padding-top: 13px;
 	text-align: left;
 }
 
 #uslugi .item h3 {
+	position: relative;
+	left: 7px;
 	color: #3D5975;
 	font-size: 18px;
 	margin-bottom: 20px;
-	letter-spacing: 1;
+	letter-spacing: 0.1px;
 	font-size: 22px;
 	font: normal normal normal 22px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
 	line-height: 1.1em;
@@ -1955,14 +1974,18 @@ body {
 }
 
 #about .left .content h2 {
+	position: relative;
+	left: 14px;
+	padding-top: 7px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #C6C6C6;
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 34px;
 	padding-bottom: 13px;
 	font: normal normal normal 55px/1.4em avenir-lt-w01_85-heavy1475544, sans-serif;
 	font-size: 45px;
+	letter-spacing: 2px;
 }
 
 #about .left .content p {
@@ -1995,9 +2018,10 @@ body {
 }
 
 #numbers {
+	margin-top: -20px;
 	background: #7dbe87;
 	width: 100%;
-	height: 235px;
+	height: 222px;
 }
 
 #contacts .item {
@@ -2032,6 +2056,8 @@ body {
 }
 
 #numbers .item {
+	position: relative;
+	top: -16px;
 	max-width: 200px;
 	margin: 0 auto;
 }
@@ -2041,6 +2067,9 @@ body {
 }
 
 #filial .item {
+	position: relative;
+	top: 10px;
+	left: -20px;
 	text-align: center;
 	margin-right: 50px;
 	margin: 110px 50px 0 0;
@@ -2052,13 +2081,13 @@ body {
 	content: '';
 	background: #7dbe87;
 	width: 10px;
-	height: 225px;
+	height: 240px;
 	position: absolute;
-	top: 0;
-	right: 0px;
+	top: -9px;
+	right: 8px;
 }
 
-#filial .item h1 {
+#filial .item h2 {
 	text-transform: uppercase;
 	color: #C6C6C6;
 	font-size: 50px;
@@ -2071,12 +2100,15 @@ body {
 	color: rgb(30, 45, 59);
 	font-size: 25px;
 	font-weight: 400;
-	margin-top: 20px;
+	margin-top: 35px;
 	position: relative;
 	font-family: avenir-lt-w01_35-light1475496, sans-serif;
 }
 
 #filial img {
+	position: relative;
+	top: 1px;
+	left: -19px;
 	margin-left: 50px;
 }
 
@@ -2096,9 +2128,10 @@ body {
 }
 
 #partners {
-	margin-top: 70px;
+	margin-top: 32px;
 	background: #f7f7f7;
 	padding: 50px 0;
+	padding-bottom: 8px;
 }
 
 #partners h1 {
@@ -2106,6 +2139,7 @@ body {
 	text-transform: uppercase;
 	color: #C6C6C6;
 	font-size: 60px;
+	letter-spacing: -5.2px;
 	font-weight: 700;
 	position: relative;
 	margin-bottom: 40px;
@@ -2124,6 +2158,7 @@ body {
 }
 
 #contacts {
+	margin-bottom: 20px;
 	padding: 30px 0 25px 0;
 	font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
 	font-size: 51px;
@@ -2136,7 +2171,7 @@ body {
 	font-size: 51px;
 	font-weight: 700;
 	position: relative;
-	margin-bottom: 40px;
+	margin-bottom: 47px;
 	padding-bottom: 15px;
 	font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
 }
@@ -2145,9 +2180,9 @@ body {
 	content: '';
 	position: absolute;
 	left: 50%;
-	margin-left: -70px;
+	margin-left: -54px;
 	bottom: -10px;
-	width: 140px;
+	width: 117px;
 	background: #7dbe87;
 	height: 10px;
 }
@@ -2173,10 +2208,6 @@ body {
 	color: #1d3954;
 	font-weight: bold;
 	font-size: 22px;
-}
-
-#contacts form {
-	margin-top: 30px;
 }
 
 #contacts form input,
@@ -2225,7 +2256,7 @@ body {
 
 #contacts .phone_head {
 	position: relative;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
 	font-size: 25px;
 	font-weight: 400;
@@ -2243,9 +2274,10 @@ body {
 }
 
 #contacts h3 {
+	margin-bottom: 15px;
 	color: #1d3954;
 	font-size: 25px;
-	margin-top: 40px;
+	margin-top: 58px;
 	font-family: avenir-lt-w01_85-heavy1475544, sans-serif;
 }
 
@@ -2301,7 +2333,7 @@ footer .facebook i {
 
 .item-loop h3 {
 	color: rgb(59, 58, 58);
-	margin: 0 0 10px 0;
+	margin: 0 0 20px 20px;
 	font-family: helvetica-w01-light, helvetica-w02-light, sans-serif;
 	font-size: 18px;
 	text-transform: uppercase;
@@ -2409,30 +2441,11 @@ div.wpcf7-response-output {
 	color: rgb(59, 58, 58);
 }
 
-p.location:after {
-	content: '';
-	width: 1px;
-	height: 22px;
-	background: #fff;
-	right: -36px;
-	position: absolute;
-	top: 0;
-}
-
-p.mail:after {
-	content: '';
-	width: 1px;
-	height: 22px;
-	background: #fff;
-	right: -39px;
-	position: absolute;
-	top: 0;
-}
-
 p.location img,
 p.mail img,
 p.phone img {
 	margin-top: -5px;
+	margin-right: 7px;
 }
 
 .nums {
@@ -2614,7 +2627,6 @@ p.phone img {
 	margin: 0 auto;
 	max-width: 1800px;
 	height: 79px;
-	outline: 1px solid red;
 }
 .header-container::after {
 	content: '';
@@ -2624,4 +2636,138 @@ p.phone img {
 	width: 200px;
 	height: 80px;
 	background: #1d3954;
+}
+body {
+	position: relative;
+}
+.header-line.container {
+	max-width: 1217px;
+}
+.address-bar {
+	position: relative;
+	top: -1px;
+	left: -37px;
+}
+.address-bar p {
+	position: relative;
+}
+.video-bg .address-bar p:nth-child(2) {
+	padding: 0 21px;
+	padding-right: 30px;
+}
+
+.address-bar p span {
+	letter-spacing: .4px;
+}
+.address-bar p.mail span {
+	letter-spacing: .2px;
+}
+
+.address-bar .facebook {
+	position: relative;
+	top: -1px;
+	right: -43px;
+}
+/*.address-bar__facebook {*/
+/*	margin-right: 40px;*/
+/*}*/
+
+.video-bg .address-bar p.phone {
+	padding-left: 22px;
+}
+
+.video-bg .address-bar p.phone img {
+	margin-right: 0;
+}
+
+.address-bar p:after {
+	content: '';
+	width: 1px;
+	height: 28px;
+	background: #fff;
+	right: 0;
+	position: absolute;
+	top: 0;
+}
+.services-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-column-gap: 38px;
+	margin: 0 auto;
+	max-width: 980px;
+}
+@media screen and (max-width: 775px) {
+	.services-grid {
+		display: block;
+	}
+}
+
+.services__link {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 228px;
+}
+
+.services__link img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#partners .owl-nav button {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 50px;
+	color: green;
+}
+
+#partners .owl-nav button:active,
+#partners .owl-nav button:hover {
+	background: none;
+}
+
+#partners .owl-prev {
+	left: 0;
+}
+
+#partners .owl-next {
+	right: 0;
+}
+#contacts form {
+	margin-left: -10px;
+}
+
+#contacts form  input,
+#contacts form  textarea {
+	padding-left: 8px;
+}
+
+#contacts form  textarea {
+	margin-bottom: 34px;
+}
+
+#contacts form  button {
+	padding: 10px 50px;
+}
+#map {
+	margin-bottom: 50px;
+}
+.stat_bg {
+	height: 230px;
+	background-size: cover;
+}
+.stat_bg h1 {
+	position: relative;
+	top: 10px;
+	left: 22px;
+	padding-bottom: 20px;
+}
+.item-loop {
+	padding-top: 46px;
+}
+.item-loop .left h3 {
+	margin: 0 0 20px 20px;
 }

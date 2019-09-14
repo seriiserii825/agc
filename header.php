@@ -24,22 +24,16 @@
     <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="js-header">
     <div class="header-container">
         <ul class="nav navbar-nav navbar-right">
             <ul class="drop-menu">
 				<?php pll_the_languages(); ?>
             </ul>
         </ul>
-        <div class="container">
+        <div class="header-line container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <!--      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">-->
-                <!--        <span class="sr-only"></span>-->
-                <!--        <span class="icon-bar"></span>-->
-                <!--        <span class="icon-bar"></span>-->
-                <!--        <span class="icon-bar"></span>-->
-                <!--      </button>-->
 
                 <div class="sandwitch-wrap">
                     <div class="sandwitch">
