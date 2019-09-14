@@ -218,7 +218,7 @@
                             </div>
 						<?php elseif ( $currentlang == "ru-RU" ): ?>
                             <img class="map-with-line" src="<?php echo get_template_directory_uri(); ?>/img/karta.png" alt="">
-                            <img class="map-clear" src="<?php echo get_template_directory_uri(); ?>/img/map-clear.png" alt="">
+                            <img class="map-clear" src="<?php echo get_template_directory_uri(); ?>/img/map-clear_trim.png" alt="">
                             <div class="city balti">
                                 <p>
                                     <a href="tel:+37379244899">Бельцы</a>
